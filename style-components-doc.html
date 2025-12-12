@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NCA Theme – Style & Components</title>
+
+  <!-- Fonts -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&family=Oxygen:wght@300;400;700&display=swap" />
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Theme Tokens -->
+  <link rel="stylesheet" href="theme-light.css" />
+  <link rel="stylesheet" href="theme-dark.css" />
+
+  <!-- Theme Controller -->
+  <script src="theme.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="image.png" alt="NetworkChuck Academy logo" class="logo-image" />
+        <span>NetworkChuck Academy</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#layout">Layout</a>
+        <a href="#sections">Sections</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn-link" href="index.html">Back to index</a>
+        <button class="theme-toggle-icon" id="themeToggle" type="button" aria-label="Toggle theme">☾</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- OVERVIEW -->
+  <section class="section" id="overview">
+    <div class="container">
+      <span class="kicker">Documentation</span>
+      <h1>Core Styles & Components (`style.css`)</h1>
+      <p class="muted">
+        This page describes how <code>style.css</code> structures the layout and components for all course pages. Colors
+        come from the theme token files; this stylesheet focuses on layout, typography, and reusable section patterns.
+      </p>
+    </div>
+  </section>
+
+  <!-- BASE & LAYOUT -->
+  <section class="section" id="layout">
+    <div class="container two-col">
+      <div>
+        <h2>Base &amp; Layout</h2>
+        <div class="card">
+          <h3>Base reset</h3>
+          <ul class="clean">
+            <li><code>*</code>, <code>*::before</code>, <code>*::after</code> use border-box sizing.</li>
+            <li><code>html</code> and <code>body</code> fill the viewport height.</li>
+            <li><code>body</code> pulls <code>--body-background</code>, <code>--dark-text</code>, and <code>--body-font</code>.</li>
+            <li><code>a</code> elements use <code>--link-text</code> with underline on hover.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h2>Layout wrappers</h2>
+        <div class="card">
+          <ul class="clean">
+            <li><code>.container</code> – centers content, max width and side padding.</li>
+            <li><code>.section</code> / <code>.section.compact</code> – vertical spacing for sections.</li>
+            <li><code>.grid</code> – generic grid helper.</li>
+            <li><code>.two-col</code> – two-column layout for overview, personas/prereqs, instructor/features, etc.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TYPOGRAPHY & BUTTONS -->
+  <section class="section">
+    <div class="container two-col">
+      <div>
+        <h2>Typography &amp; Pills</h2>
+        <div class="card">
+          <ul class="clean">
+            <li><code>h1</code>, <code>h2</code>, <code>h3</code> use <code>--heading-font</code> and bold weights.</li>
+            <li><code>p</code> uses <code>--planner-text</code> for body copy.</li>
+            <li><code>.muted</code> uses <code>--planner-text-muted</code> for secondary text.</li>
+            <li><code>.kicker</code> – small pill label above headings (e.g., “Course”, “Theme Playground”).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h2>Cards &amp; Buttons</h2>
+        <div class="card">
+          <ul class="clean">
+            <li><code>.card</code> – generic surface used for stats, video, labs, prerequisites, pricing, etc.</li>
+            <li><code>.btn-row</code> – flex row grouping CTAs.</li>
+            <li><code>.btn-primary</code> – gold CTA button using <code>--brand-primary</code>.</li>
+            <li><code>.btn-secondary</code> – neutral button on <code>--planner-surface</code>.</li>
+            <li><code>.btn-link</code> – textual CTA link using <code>--link-text</code>.</li>
+            <li><code>.pill</code> – compact course metadata badges; used in hero meta rows.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HEADER & HERO -->
+  <section class="section" id="sections">
+    <div class="container">
+      <h2>Header &amp; Hero</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Header</h3>
+          <ul class="clean">
+            <li><code>.header</code> – sticky top bar with blur and border.</li>
+            <li><code>.header-inner</code> – flex layout for logo, nav, actions.</li>
+            <li><code>.logo</code> + <code>.logo-image</code> – brand mark and site name.</li>
+            <li><code>.nav</code> – primary navigation, hidden on small screens.</li>
+            <li><code>.header-actions</code> – sign-in/up and <code>#themeToggle</code> button.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Hero</h3>
+          <ul class="clean">
+            <li><code>.hero</code> – gradient band at the top of each course page.</li>
+            <li><code>.hero-grid</code> – two columns: main copy and sidebar.</li>
+            <li><code>.hero-top-meta</code>, <code>.hero-instructor</code>, <code>.hero-updated</code> – instructor line and update meta.</li>
+            <li><code>.hero-meta</code> – row of <code>.pill</code> elements for level, hours, skills, etc.</li>
+            <li><code>.hero-right</code> – sidebar stacking <code>.video</code> and stats cards.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Video &amp; Stats</h3>
+          <ul class="clean">
+            <li><code>.video</code> – preview card wrapper (usually with an <code>&lt;iframe&gt;</code>).</li>
+            <li><code>.video-top</code> – header row: “Watch the first video free”, “Course preview”.</li>
+            <li><code>.video-frame</code> – gradient background behind the embedded player.</li>
+            <li><code>.stats</code> – grid container for stat cards.</li>
+            <li><code>.stat</code> – stat cell with <code>.label</code> and <code>.value</code> (skills, videos, labs, hours).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRICULUM, LABS, AUDIENCE, FOOTER -->
+  <section class="section">
+    <div class="container">
+      <h2>Sections &amp; Components</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>What You’ll Learn</h3>
+          <ul class="clean">
+            <li><code>.learn</code> – banded background for the outcomes section.</li>
+            <li><code>.learn-card</code> – two-column card with copy + bullet list.</li>
+            <li><code>ul.clean</code> – shared bullet style for learning outcomes and many lists.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Curriculum / Accordion</h3>
+          <ul class="clean">
+            <li><code>.accordion</code> – stacked list of <code>&lt;details class="module"&gt;</code>.</li>
+            <li><code>.module summary</code> – module header with title and <code>.meta</code> row.</li>
+            <li><code>.lesson</code> – lesson row with <code>.tag</code>, <code>.title</code>, and duration.</li>
+            <li><code>.tag.lab</code>, <code>.tag.quiz</code> – visual labels for labs and quizzes.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Hands‑On, Personas, Proof</h3>
+          <ul class="clean">
+            <li><code>.hands-on</code> + <code>.hands-grid</code> + <code>.hands-card</code> – hands‑on labs section and highlight card.</li>
+            <li><code>.persona</code>, <code>.icon</code> – cards for “Who this course is for” and prerequisite callouts.</li>
+            <li><code>.proof-grid</code>, <code>.quote</code>, <code>.metric</code> – social proof and metrics layout.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Pricing, Related, Community, Footer</h3>
+          <ul class="clean">
+            <li><code>.pricing</code>, <code>.plans</code>, <code>.plan</code>, <code>.plan.featured</code>, <code>.chip</code> – pricing section.</li>
+            <li><code>.related-grid</code>, <code>.course-card</code> – related courses and demo cards.</li>
+            <li><code>.community</code> – final CTA / community band.</li>
+            <li><code>.footer</code>, <code>.footer-grid</code>, <code>.footer-bottom</code> – global footer layout.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">
+          <img src="image.png" alt="NetworkChuck Academy logo" class="logo-image" />
+          <span>NetworkChuck Academy</span>
+        </div>
+        <p class="muted" style="margin-top:10px;">
+          Reference for how course layouts are structured with shared CSS classes.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Docs</h3>
+        <div style="display:grid; gap:8px;">
+          <a href="style-components-doc.html">Style &amp; Components</a>
+          <a href="theme-light-dark-comparison.html">Light vs Dark Theme</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Navigation</h3>
+        <div style="display:grid; gap:8px;">
+          <a href="index.html">Theme index</a>
+          <a href="course-template.html">Course template</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      © 2025 NetworkChuck Academy — Theme Docs
+    </div>
+  </footer>
+
+</body>
+</html>

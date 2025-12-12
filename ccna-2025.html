@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NetworkChuck Academy — Cisco CCNA 2025</title>
+
+  <!-- Fonts -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&family=Oxygen:wght@300;400;700&display=swap" />
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Theme Tokens -->
+  <link rel="stylesheet" href="theme-light.css" />
+  <link rel="stylesheet" href="theme-dark.css" />
+
+  <!-- Theme Controller -->
+  <script src="theme.js" defer></script>
+</head>
+
+<body>
+
+  <!-- GLOBAL HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="image.png" alt="NetworkChuck Academy logo" class="logo-image" />
+        <span>NETWORKCHUCK ACADEMY</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#hero">COURSES</a>
+        <a href="#curriculum">PATHS</a>
+        <a href="#community">COMMUNITY</a>
+        <a href="#instructor">ABOUT</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn-link" href="#">SIGN IN</a>
+        <button class="btn-primary" type="button">SIGN UP</button>
+        <button class="theme-toggle-icon" id="themeToggle" type="button" aria-label="Toggle theme">☾</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="kicker">Course</span>
+        <h1>Cisco CCNA 2025</h1>
+
+        <div class="hero-top-meta" aria-label="Instructor and course meta">
+          <div class="hero-instructor">
+            <span class="avatar" aria-hidden="true">JC</span>
+            <span class="muted">Taught by <strong>Jeremy Cioara</strong></span>
+          </div>
+          <div class="hero-updated muted">
+            Brand new CCNA for 2025 • Castle Rysen Coffee storyline
+          </div>
+        </div>
+
+        <p class="muted">
+          Our very own Jeremy Cioara has built a brand new CCNA for 2025 built around the real‑world skills you need
+          today. Join Castle Rysen Coffee, the last coffee enterprise of the future, as they scale their network in a
+          decimated world — designing resilient sites, defending against chaos, and keeping the coffee flowing no matter
+          what breaks. You’ll follow the story from the first cable plug‑in to a fully automated, enterprise‑grade
+          network that feels like something you could run in real life.
+        </p>
+
+        <div class="hero-meta" aria-label="Course metadata">
+          <span class="pill"><span class="dot" aria-hidden="true"></span>Beginner • Early‑Intermediate</span>
+          <span class="pill">34 Hours</span>
+          <span class="pill">26 Skills</span>
+          <span class="pill">185 Videos</span>
+          <span class="pill">85 Labs</span>
+          <span class="pill">CCNA 200‑301 Aligned</span>
+        </div>
+
+        <div class="btn-row" style="margin-top:16px;">
+          <button class="btn-primary" type="button">Subscribe!</button>
+          <button class="btn-secondary" type="button">Watch Free CCNA Lessons</button>
+        </div>
+      </div>
+
+      <aside class="hero-right" aria-label="Course preview and stats">
+        <div class="card video">
+          <div class="video-top">
+            <div><strong>Watch the first video free</strong></div>
+            <div class="muted">Course preview</div>
+          </div>
+          <div class="video-frame">
+            <iframe
+              src="https://player.vimeo.com/video/1065588840"
+              title="Cisco CCNA 2025 Preview"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+              style="width:100%;height:100%;border:0;">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom:8px;">Course Stats</h3>
+          <div class="stats">
+            <div class="stat">
+              <div class="label">Skills</div>
+              <div class="value">26</div>
+            </div>
+            <div class="stat">
+              <div class="label">Videos</div>
+              <div class="value">185</div>
+            </div>
+            <div class="stat">
+              <div class="label">Labs</div>
+              <div class="value">85</div>
+            </div>
+            <div class="stat">
+              <div class="label">Hours</div>
+              <div class="value">34</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- OVERVIEW / STORY -->
+  <section class="section" id="overview">
+    <div class="container">
+      <h2>Build the Network That Saves a Civilization</h2>
+      <p class="muted">
+        Master CCNA skills by designing and deploying a resilient, multi-site enterprise network for Castle Rysen
+        Coffee—complete with routing, security, wireless, automation, and real-world troubleshooting.
+      </p>
+      <p class="muted">
+        This CCNA training walks learners through designing and deploying a complete, production-ready network for
+        Castle Rysen Coffee—a fictional but highly realistic multi-site enterprise operating in a challenging,
+        post-apocalyptic world. Students will build a secure, scalable network spanning a central headquarters,
+        regional fallout shelters, and dozens of district coffee shops.
+      </p>
+      <p class="muted">
+        Through hands-on labs, you’ll implement IPv4/IPv6 addressing, VLANs, routing (static + OSPF), wireless
+        networks, EtherChannels, and core services like DHCP, DNS, NAT, NTP, and SNMP. You’ll also configure multilayer
+        security (ACLs, port security, DAI, DHCP Snooping), segment guest and administrative networks, support
+        streaming/video surveillance, and integrate automation using tools like Ansible and REST APIs.
+      </p>
+      <p class="muted">
+        By the end, learners gain practical experience in end-to-end network design, implementation, monitoring,
+        troubleshooting, documentation, and automation—mirroring the real-world expectations of a modern network
+        engineer.
+      </p>
+      <div class="btn-row" style="margin-top:16px;">
+        <button class="btn-primary" type="button">Subscribe now!</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU'LL LEARN -->
+  <section class="section learn">
+    <div class="container">
+      <div class="card learn-card">
+        <div class="learn-card-header">
+          <h2>What You’ll Learn</h2>
+          <p class="muted">
+            Core networking skills wrapped in a story-driven Castle Rysen Coffee project so every concept ties back to
+            something real.
+          </p>
+        </div>
+        <div class="learn-card-body">
+          <ul class="clean" aria-label="Learning outcomes">
+            <li>Design and deploy a multi-site enterprise network for Castle Rysen Coffee.</li>
+            <li>Implement IPv4/IPv6, VLANs, EtherChannels, and OSPF routing.</li>
+            <li>Configure and secure Cisco switches and routers using IOS.</li>
+            <li>Deploy wireless, QoS, NTP, DNS, SSH, DHCP, and more.</li>
+            <li>Use automation and APIs to manage and monitor networks.</li>
+            <li>Prepare confidently for the Cisco CCNA 200-301 exam.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR + PREREQUISITES -->
+  <section class="section">
+    <div class="container two-col">
+      <div>
+        <h2>Who This Course Is For</h2>
+
+        <div class="persona">
+          <div class="icon" aria-hidden="true">✅</div>
+          <div>
+            <h3 style="margin:0 0 6px;">Beginners to Networking</h3>
+            <p class="muted" style="margin:0;">You’re just getting started and want a structured, fun path into Cisco networking.</p>
+          </div>
+        </div>
+
+        <div class="persona" style="margin-top:12px;">
+          <div class="icon" aria-hidden="true">✅</div>
+          <div>
+            <h3 style="margin:0 0 6px;">IT &amp; Helpdesk Pros</h3>
+            <p class="muted" style="margin:0;">You already work in IT and are ready to step into a network engineer role.</p>
+          </div>
+        </div>
+
+        <div class="persona" style="margin-top:12px;">
+          <div class="icon" aria-hidden="true">✅</div>
+          <div>
+            <h3 style="margin:0 0 6px;">Certification Seekers</h3>
+            <p class="muted" style="margin:0;">You want CCNA 200‑301 and prefer labs and story‑driven learning over dry exam cram.</p>
+          </div>
+        </div>
+
+        <div class="persona" style="margin-top:12px;">
+          <div class="icon" aria-hidden="true">❌</div>
+          <div>
+            <h3 style="margin:0 0 6px;">Not Ideal If…</h3>
+            <p class="muted" style="margin:0;">You’re already a senior network architect looking only for expert‑level deep dives.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2>Prerequisites</h2>
+        <div class="card">
+          <p><strong>No prior Cisco experience required.</strong></p>
+          <p class="muted">Helpful, but not mandatory:</p>
+          <ul class="clean">
+            <li>Basic computer literacy and comfort with command‑line typing.</li>
+            <li>Time set aside to follow the labs and build your own Castle Rysen network.</li>
+            <li>Curiosity and willingness to break things (and fix them) in a safe environment.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FREE LESSONS -->
+  <section class="section">
+    <div class="container">
+      <h2>Watch Free CCNA Lessons</h2>
+      <p class="muted">
+        Get a taste of the Castle Rysen storyline and the teaching style before you commit.
+      </p>
+
+      <div class="card">
+        <ul class="clean" aria-label="Sample free lessons">
+          <li><strong>SKILL 01 • LESSON 02</strong> — Using Packet Tracer to Understand Networks • Building Your First Network</li>
+          <li><strong>SKILL 02 • LESSON 04</strong> — Assembling Your Network Equipment • Switching &amp; Wireless</li>
+          <li><strong>SKILL 03 • LESSON 05</strong> — Cables, Connectors, and Ports • Understanding Fiber Optic Cable Spectrum</li>
+          <li><strong>SKILL 04 • LESSON 01</strong> — Network Design and Communication Models • The OSI vs. TCP/IP Model</li>
+          <li><strong>SKILL 05 • LESSON 01</strong> — Configuring Cisco Devices using the IOS • Setting Up Console Connections</li>
+          <li><strong>SKILL 06 • LESSON 03</strong> — Understanding and Configuring Basic Switching • How Switches Do What They Do?</li>
+          <li><strong>SKILL 07 • LESSON 03</strong> — Designing IP Addresses for Castle Rysen • Private and Public IP Addresses</li>
+          <li><strong>SKILL 08 • LESSON 02</strong> — Configuring Switch and Router Interfaces • Configuring Router Interfaces</li>
+          <li><strong>SKILL 09 • LESSON 03</strong> — Set up Static and Default Internet Routing • Configuring Static Routing</li>
+          <li><strong>SKILL 10 • LESSON 01</strong> — Configuring Basic NAT • How NAT Works</li>
+        </ul>
+
+        <div class="card" style="margin-top:16px;">
+          <strong>Now playing</strong>
+          <p class="muted" style="margin-top:6px;">
+            SKILL 01 • LESSON 02 — Using Packet Tracer to Understand Networks • Building Your First Network
+          </p>
+        </div>
+      </div>
+
+      <div class="btn-row" style="margin-top:18px;">
+        <button class="btn-primary" type="button">Subscribe now!</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIRTUAL LABS -->
+  <section class="section hands-on" id="labs">
+    <div class="container hands-grid">
+      <div>
+        <h2>Virtual Labs</h2>
+        <p><strong>Practice Real Skills in Real Environments</strong></p>
+        <p>
+          You’ve GOT to check out our CCNA virtual labs! They're designed to make networking feel alive and achievable,
+          right from your screen. You’ll be stepping in as the network administrator of Castle Rysen Coffee, deploying
+          Cisco network environments for the future of mankind!
+        </p>
+        <p class="muted">
+          We’re using genuine Cisco software, giving you hands-on practice with routers, switches, and configs that
+          really mirror what you'll encounter. Labs are spliced directly into the course interface, so as soon as we
+          demo a concept on video, you can immediately try it yourself.
+        </p>
+        <p class="muted">
+          Break things, fix them, experiment freely in a safe space. It's all about turning “I get it” into “I can do
+          this” while we're on this journey together.
+        </p>
+        <div class="btn-row" style="margin-top:12px;">
+          <button class="btn-secondary" type="button">Watch our CCNA Lab Demo</button>
+        </div>
+      </div>
+
+      <div class="card hands-card">
+        <h3 style="margin-bottom:8px;">Lab Highlights</h3>
+        <ul class="clean">
+          <li>Real Cisco IOS in a virtual environment</li>
+          <li>Labs integrated directly into the video flow</li>
+          <li>Safe space to break, fix, and experiment</li>
+          <li>Confidence-building scenarios that mirror real jobs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATION ALIGNMENT -->
+  <section class="section" id="certification">
+    <div class="container">
+      <div class="card">
+        <h2>Certification Alignment</h2>
+        <p class="muted">
+          This course is built specifically around the <strong>Cisco Certified Network Associate (CCNA) — 200‑301</strong>
+          exam objectives. Each Castle Rysen skill maps to one or more domains from the official blueprint, so you cover
+          every major area through a single, coherent storyline instead of isolated cram sessions.
+        </p>
+        <ul class="clean">
+          <li>Network fundamentals</li>
+          <li>Network access: switching, VLANs, STP, EtherChannel</li>
+          <li>IP connectivity and IP services: routing, NAT, DHCP, DNS, NTP</li>
+          <li>Security fundamentals: ACLs, port security, device hardening</li>
+          <li>Automation and programmability: APIs and automation tooling</li>
+        </ul>
+        <p class="muted" style="margin-top:10px;">
+          This course prepares you for the CCNA 200‑301 exam. The certification exam itself is purchased and scheduled
+          separately through Cisco / Pearson VUE.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDY PLANNER -->
+  <section class="section">
+    <div class="container two-col">
+      <div>
+        <h2>Study Planner — Learn on Your Time</h2>
+        <p class="muted">
+          Study Planners allow you to commit to times to learn so that you can stay on track.
+        </p>
+        <ul class="clean">
+          <li>Schedule training times</li>
+          <li>Set deadlines</li>
+          <li>Monitor your progress</li>
+          <li>Plan your future!</li>
+        </ul>
+        <div class="btn-row" style="margin-top:12px;">
+          <button class="btn-secondary" type="button">View Study Planner</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-bottom:8px;">Stay Consistent</h3>
+        <p class="muted">
+          CCNA is a marathon, not a sprint. The Study Planner helps you turn good intentions into consistent action by
+          blocking time on your calendar and tracking your momentum.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSE CURRICULUM (skills condensed) -->
+  <section class="section" id="curriculum">
+    <div class="container">
+      <h2>Course Curriculum</h2>
+      <p class="muted">
+        26 skills that walk you from “what is a network?” to deploying, securing, and automating Castle Rysen Coffee’s
+        entire infrastructure.
+      </p>
+
+      <div class="accordion" aria-label="CCNA 2025 skills">
+        <!-- For brevity we keep the first few skills explicit and summarize the rest. -->
+        <details class="module" open>
+          <summary>
+            <div>
+              Skill 01 — Using Packet Tracer to Understand Networks
+              <div class="meta">
+                <span>Build and test designs in a virtual environment</span>
+              </div>
+            </div>
+            <span class="muted">▼</span>
+          </summary>
+          <div class="body">
+            <p class="muted">
+              Build and test network designs in a risk-free virtual environment using Cisco Packet Tracer: create
+              topologies, connect devices, simulate traffic, and troubleshoot issues without touching physical gear.
+            </p>
+          </div>
+        </details>
+
+        <details class="module">
+          <summary>
+            <div>
+              Skill 02 — Assembling Your Network Equipment
+              <div class="meta">
+                <span>Choose and prepare the right gear</span>
+              </div>
+            </div>
+            <span class="muted">▼</span>
+          </summary>
+          <div class="body">
+            <p class="muted">
+              Learn how to walk into a small environment, assess requirements, and select the right routers, switches,
+              cabling, and wireless gear to bring Castle Rysen Coffee online.
+            </p>
+          </div>
+        </details>
+
+        <details class="module">
+          <summary>
+            <div>
+              Skill 03 — Cables, Connectors, and Ports
+              <div class="meta">
+                <span>Master physical and logical connectivity</span>
+              </div>
+            </div>
+            <span class="muted">▼</span>
+          </summary>
+          <div class="body">
+            <p class="muted">
+              Understand copper, fiber, and wireless links, when to use each, and how to diagnose physical issues that
+              bring networks down.
+            </p>
+          </div>
+        </details>
+
+        <details class="module">
+          <summary>
+            <div>
+              Skills 04–26 — From Network Design to Automation
+              <div class="meta">
+                <span>Design, build, secure, and automate Castle Rysen’s entire network</span>
+              </div>
+            </div>
+            <span class="muted">▼</span>
+          </summary>
+          <div class="body">
+            <p class="muted">
+              The remaining skills dive into communication models, IOS configuration, switching, VLANs, STP,
+              EtherChannel, routing with static routes and OSPF, FHRPs, IPv6, ACLs, security, discovery protocols,
+              NTP/DNS/SSH/DHCP, SNMP and Syslog, QoS, wireless networking, and full-stack automation with REST APIs and
+              modern tooling.
+            </p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTRUCTOR -->
+  <section class="section" id="instructor">
+    <div class="container two-col">
+      <div>
+        <h2>Trainer — Jeremy Cioara</h2>
+        <div class="card">
+          <p class="muted">
+            Hello! If we haven’t met before, my name is Jeremy Cioara. I stepped into the training world back in 1998,
+            teaching a group of phone technicians at US West Communications about this new technology called DSL. I was
+            19 years old.
+          </p>
+          <p class="muted">
+            Things have come a long way since then… and yet some things never change: I’m still passionate about seeing
+            others light up when what was once a confusing, discouraging topic suddenly clicks. I now bring the
+            experience of building a company (Veeya) that actually does the stuff I teach, stepping back into the
+            virtual classroom with a renewed passion for bringing the real world into my training.
+          </p>
+          <p class="muted">
+            And yes, my friend, I still say, “I hope this has been informative for you, and I’d like to thank you for
+            viewing.”
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h2>Why Learners Love This Course</h2>
+        <div class="card">
+          <ul class="clean">
+            <li>Story-driven labs built around Castle Rysen Coffee.</li>
+            <li>Real Cisco IOS, not toy simulators.</li>
+            <li>Practical skills for real-world networking roles.</li>
+            <li>Guidance from one of the most trusted voices in CCNA training.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section community" id="community">
+    <div class="container">
+      <h2>Ready to Build Castle Rysen’s Network?</h2>
+      <p class="muted">
+        Subscribe now and start working through the labs, videos, and challenges that will turn CCNA theory into
+        real-world networking skills.
+      </p>
+      <div class="btn-row">
+        <button class="btn-primary" type="button">Subscribe now!</button>
+        <a class="btn-link" href="#curriculum">Review the full course contents →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">
+          <img src="image.png" alt="NetworkChuck Academy logo" class="logo-image" />
+          <span>NetworkChuck Academy</span>
+        </div>
+        <p class="muted" style="margin-top:10px;">
+          Learn networking the fun way: hands-on labs, real configs, and “ah-ha” moments.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Featured Links</h3>
+        <div style="display:grid; gap:8px;">
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">About Us</a>
+          <a href="#">Courses</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Support</h3>
+        <div style="display:grid; gap:8px;">
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Connect with Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      Copyright © 2025
+    </div>
+  </footer>
+
+</body>
+</html>

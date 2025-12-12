@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NetworkChuck Academy — Getting Started with N8N</title>
+
+  <!-- Fonts -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&family=Oxygen:wght@300;400;700&display=swap" />
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Theme Tokens -->
+  <link rel="stylesheet" href="theme-light.css" />
+  <link rel="stylesheet" href="theme-dark.css" />
+
+  <!-- Theme Controller -->
+  <script src="theme.js" defer></script>
+</head>
+
+<body>
+
+  <!-- GLOBAL HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="image.png" alt="NetworkChuck Academy logo" class="logo-image" />
+        <span>NETWORKCHUCK ACADEMY</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#hero">COURSES</a>
+        <a href="#curriculum">PATHS</a>
+        <a href="#community">COMMUNITY</a>
+        <a href="#instructor">ABOUT</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn-link" href="#">SIGN IN</a>
+        <button class="btn-primary" type="button">SIGN UP</button>
+        <button class="theme-toggle-icon" id="themeToggle" type="button" aria-label="Toggle theme">☾</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="kicker">Course</span>
+        <h1>Getting Started with N8N</h1>
+
+        <div class="hero-top-meta" aria-label="Instructor and course meta">
+          <div class="hero-instructor">
+            <span class="avatar" aria-hidden="true">JC</span>
+            <span class="muted">Taught by <strong>Jeremy Cioara</strong></span>
+          </div>
+          <div class="hero-updated muted">
+            New for 2025 • AI‑powered workflow automation for your inbox
+          </div>
+        </div>
+
+        <p class="muted">
+          Stop drowning in email. Build an AI‑powered personal assistant that automatically classifies messages, drafts
+          intelligent replies, organizes your inbox with smart labels, and sends Slack notifications for what matters —
+          all while you sleep. This hands‑on course takes you from zero to production‑ready N8N automation by building
+          something you’ll actually use every day.
+        </p>
+
+        <div class="hero-meta" aria-label="Course metadata">
+          <span class="pill"><span class="dot" aria-hidden="true"></span>Beginner → Intermediate</span>
+          <span class="pill">3 Hours</span>
+          <span class="pill">2 Skills</span>
+          <span class="pill">14 Videos</span>
+          <span class="pill">14 Quizzes</span>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn-primary" type="button">Subscribe to this Course! $50</button>
+          <button class="btn-secondary" type="button">Subscribe to all Courses!</button>
+        </div>
+      </div>
+
+      <aside class="hero-right" aria-label="Course preview and stats">
+        <div class="card video">
+          <div class="video-top">
+            <div><strong>Watch Free Sample Skills</strong></div>
+            <div class="muted">Course preview</div>
+          </div>
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/ONgECvZNI3o?si=e4FbinhMh3jPsxGJ"
+              title="Getting Started with N8N Preview"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              style="width:100%;height:100%;border:0;">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom:8px;">Course Stats</h3>
+          <div class="stats">
+            <div class="stat">
+              <div class="label">Skills</div>
+              <div class="value">2</div>
+            </div>
+            <div class="stat">
+              <div class="label">Videos</div>
+              <div class="value">14</div>
+            </div>
+            <div class="stat">
+              <div class="label">Quizzes</div>
+              <div class="value">14</div>
+            </div>
+            <div class="stat">
+              <div class="label">Hours</div>
+              <div class="value">3</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section class="section" id="overview">
+    <div class="container">
+      <h2>Create the Workflow That Liberates Your Inbox with AI</h2>
+      <p class="muted">
+        Master N8N and build something you’ll actually use: an AI‑powered email personal assistant. This hands‑on course
+        shows you the process to create production‑ready automation, not just a demo that gets abandoned after lesson
+        three.
+      </p>
+      <p class="muted">
+        You’ll learn to integrate APIs, connect AI models, and work with triggers and workflows. Unlike theoretical
+        tutorials, you’ll experience the actual challenges and problem‑solving that come with building real automation —
+        because that’s how you truly learn.
+      </p>
+    </div>
+  </section>
+
+  <!-- WHAT YOU'LL LEARN -->
+  <section class="section learn">
+    <div class="container">
+      <div class="card learn-card">
+        <div class="learn-card-header">
+          <h2>What You’ll Learn</h2>
+          <p class="muted">
+            Action‑oriented skills you can use immediately to automate your own workflows, starting with your inbox.
+          </p>
+        </div>
+        <div class="learn-card-body">
+          <ul class="clean" aria-label="Learning outcomes">
+            <li>Understand where N8N fits among AI tools, AI agents, and workflow automation platforms.</li>
+            <li>Plan effective automations so your workflows don’t collapse under their own complexity.</li>
+            <li>Build an AI‑powered email assistant that classifies messages, drafts replies, and labels mail automatically.</li>
+            <li>Integrate APIs and connect AI models (OpenAI, Grok, Claude, etc.) to power intelligent automations.</li>
+            <li>Work confidently with N8N triggers (manual, webhook, schedule) and multi‑step workflows.</li>
+            <li>Add Slack notifications and other outputs so only the important messages interrupt you.</li>
+            <li>Debug real errors, handle failure cases, and gain the troubleshooting instincts to fix anything N8N throws at you.</li>
+            <li>Deploy your workflows from manual testing to scheduled, production‑ready automation.</li>
+            <li>Think like an AI Process Analyst and spot automation opportunities everywhere.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR + PREREQUISITES -->
+  <section class="section">
+    <div class="container two-col">
+      <div>
+        <h2>Who This Course Is For</h2>
+
+        <div class="persona">
+          <div class="icon" aria-hidden="true">✅</div>
+          <div>
+            <h3 style="margin:0 0 6px;">Email‑Overwhelmed Pros</h3>
+            <p class="muted" style="margin:0;">You’re buried in email and want an assistant that triages it for you.</p>
+          </div>
+        </div>
+
+        <div class="persona" style="margin-top:12px;">
+          <div class="icon" aria-hidden="true">✅</div>
+          <div>
+            <h3 style="margin:0 0 6px;">Automation Builders</h3>
+            <p class="muted" style="margin:0;">You want real, project‑based experience instead of toy examples.</p>
+          </div>
+        </div>
+
+        <div class="persona" style="margin-top:12px;">
+          <div class="icon" aria-hidden="true">✅</div>
+          <div>
+            <h3 style="margin:0 0 6px;">Developers &amp; Tinkerers</h3>
+            <p class="muted" style="margin:0;">You’d rather glue APIs, AI, and SaaS tools together than reinvent the backend.</p>
+          </div>
+        </div>
+
+        <div class="persona" style="margin-top:12px;">
+          <div class="icon" aria-hidden="true">❌</div>
+          <div>
+            <h3 style="margin:0 0 6px;">Not ideal if…</h3>
+            <p class="muted" style="margin:0;">You only want a polished feature tour and never want to see real debugging.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2>Prerequisites</h2>
+        <div class="card">
+          <p><strong>No prior N8N or AI experience required.</strong></p>
+          <p class="muted">Helpful, but not mandatory:</p>
+          <ul class="clean">
+            <li>Basic computer literacy and comfort with web apps.</li>
+            <li>Willingness to sign up for N8N and necessary API providers (e.g., OpenAI, Slack).</li>
+            <li>Curiosity and willingness to experiment, debug, and adjust workflows.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRICULUM -->
+  <section class="section" id="curriculum">
+    <div class="container">
+      <h2>Course Curriculum</h2>
+      <p class="muted">
+        Two focused skills that take you from “what is N8N?” to a deployed AI‑powered email assistant.
+      </p>
+
+      <div class="accordion" aria-label="Getting Started with N8N curriculum">
+
+        <details class="module" open>
+          <summary>
+            <div>
+              Skill 01 — N8N Fundamentals &amp; Workflow Design
+              <div class="meta">
+                <span>Foundations • Triggers • First API</span>
+              </div>
+            </div>
+            <span class="muted">▼</span>
+          </summary>
+          <div class="body">
+            <p class="muted">
+              Master the foundations of N8N workflow automation by learning what N8N really is, how to set it up, and
+              how to plan effective automations. You’ll build the initial framework for your AI‑powered email assistant,
+              working hands‑on with manual, webhook, and schedule triggers plus your first API integration.
+            </p>
+          </div>
+        </details>
+
+        <details class="module">
+          <summary>
+            <div>
+              Skill 02 — AI Integration &amp; Production Deployment
+              <div class="meta">
+                <span>AI models • Notifications • Production</span>
+              </div>
+            </div>
+            <span class="muted">▼</span>
+          </summary>
+          <div class="body">
+            <p class="muted">
+              Take your workflows to production by integrating AI models and deploying real automation that runs while
+              you sleep. Connect AI providers to classify emails, draft replies, send Slack notifications, implement
+              error handling, and transition from manual tests to scheduled, production‑ready triggers.
+            </p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HANDS-ON LABS -->
+  <section class="section hands-on" id="labs">
+    <div class="container hands-grid">
+      <div>
+        <h2>Hands‑On Labs &amp; Practice</h2>
+        <p>
+          This course is built as a single, cohesive project: an AI‑powered email personal assistant. Every major
+          concept is introduced through a step in the workflow — from triggers and API calls to AI classification and
+          notifications.
+        </p>
+        <p class="muted">
+          Instead of isolated exercises, you continuously evolve the same workflow until it’s production‑ready. By the
+          end, you’ll have automation that’s running for you, not just a folder of half‑finished demos.
+        </p>
+      </div>
+
+      <div class="card hands-card">
+        <h3 style="margin-bottom:8px;">Lab Highlights</h3>
+        <ul class="clean">
+          <li>Build a complete N8N workflow that reads email, classifies messages, drafts replies, and labels mail.</li>
+          <li>Add Slack notifications so only the important messages interrupt you.</li>
+          <li>Debug real errors and failures as they happen, just like in real projects.</li>
+          <li>Move from manual runs to scheduled production triggers you can trust.</li>
+          <li>Leave with a working automation you can use every day.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATION ALIGNMENT (NONE) -->
+  <section class="section" id="certification">
+    <div class="container">
+      <div class="card">
+        <h2>Certification Alignment</h2>
+        <p class="muted">
+          This course is not tied to a specific vendor exam. Instead, it focuses on practical automation skills you can
+          apply immediately — designing workflows, integrating APIs, and connecting AI models to real business problems.
+        </p>
+        <ul class="clean">
+          <li>Workflow and process design for automation.</li>
+          <li>N8N fundamentals: triggers, nodes, error handling.</li>
+          <li>API integration and SaaS automation patterns.</li>
+          <li>AI model integration for classification and content generation.</li>
+          <li>Monitoring, troubleshooting, and production deployment.</li>
+        </ul>
+        <p class="muted" style="margin-top:10px;">
+          Use this course to build a portfolio‑ready automation project and to level up into roles like Automation
+          Engineer or AI Process Analyst.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTRUCTOR + FEATURES -->
+  <section class="section" id="instructor">
+    <div class="container two-col">
+      <div>
+        <h2>Your Instructor — Jeremy Cioara</h2>
+        <div class="card">
+          <p class="muted">
+            Hello! If we haven’t met before, my name is Jeremy Cioora. I stepped into the training world back in 1998,
+            teaching a group of phone technicians at US West Communications about this new technology called DSL — when
+            I was 19 years old.
+          </p>
+          <p class="muted">
+            Things have come a long way since then, but one thing hasn’t changed: I’m still passionate about seeing
+            others light up when a confusing, discouraging topic suddenly clicks. These days I also bring experience
+            from building Veeya, a company that actually does the stuff I teach, so every lesson comes from real
+            projects and real problems.
+          </p>
+          <p class="muted">
+            I hope this has been informative for you, and I’d like to thank you for viewing.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h2>Course Features</h2>
+        <div class="card">
+          <ul class="clean">
+            <li>🎥 Project‑driven, bite‑sized video lessons.</li>
+            <li>🧪 Hands‑on labs that build a real AI‑powered workflow.</li>
+            <li>📚 Downloadable workflow diagrams and reference snippets.</li>
+            <li>🧠 Beginner‑friendly explanations with honest troubleshooting, not just polished takes.</li>
+            <li>🧰 Real‑world automation skills you can reuse for other tools and processes.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF (PLACEHOLDERS) -->
+  <section class="section">
+    <div class="container">
+      <h2>What Learners Are Saying</h2>
+      <div class="proof-grid" aria-label="Testimonials and metrics">
+        <div class="card quote">
+          <p style="margin-bottom:10px;"><strong>“Building a real email assistant made N8N and AI finally make sense to me.”</strong></p>
+          <p class="muted" style="margin:0;">— Early beta learner</p>
+        </div>
+        <div class="card metric">
+          <div class="big">Project‑based</div>
+          <p class="muted" style="margin:6px 0 0;">Every lesson pushes your real workflow forward — no filler.</p>
+        </div>
+        <div class="card quote">
+          <p style="margin-bottom:10px;"><strong>“Seeing Jeremy debug real errors was more valuable than any polished tutorial.”</strong></p>
+          <p class="muted" style="margin:0;">— Automation enthusiast</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="section community" id="community">
+    <div class="container">
+      <h2>Build the AI‑Powered Workflow That Liberates Your Inbox</h2>
+      <p class="muted">
+        Subscribe now and build an AI‑powered email assistant that actually does work for you while you sleep. Along the
+        way, you’ll gain the confidence to design, debug, and deploy your own custom N8N automations.
+      </p>
+      <div class="btn-row">
+        <button class="btn-primary" type="button">Subscribe to this Course! $50</button>
+        <button class="btn-secondary" type="button">Subscribe to all Courses!</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">
+          <img src="image.png" alt="NetworkChuck Academy logo" class="logo-image" />
+          <span>NetworkChuck Academy</span>
+        </div>
+        <p class="muted" style="margin-top:10px;">
+          Learn networking and automation the fun way: hands‑on labs, real projects, and “ah‑ha” moments.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Explore</h3>
+        <div style="display:grid; gap:8px;">
+          <a href="index.html">Theme playground</a>
+          <a href="ccna-2025.html">CCNA 2025</a>
+          <a href="course-template.html">Course template</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Support</h3>
+        <div style="display:grid; gap:8px;">
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">About Us</a>
+          <a href="#">Courses</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      Copyright © 2025
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NetworkChuck Academy — Course Template</title>
+
+  <!-- Fonts -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&family=Oxygen:wght@300;400;700&display=swap" />
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Theme Tokens -->
+  <link rel="stylesheet" href="theme-light.css" />
+  <link rel="stylesheet" href="theme-dark.css" />
+
+  <!-- Theme Controller -->
+  <script src="theme.js" defer></script>
+</head>
+
+<body>
+
+  <!-- =====================================================
+       1. GLOBAL HEADER
+       ===================================================== -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="image.png" alt="NetworkChuck Academy logo" class="logo-image" />
+        <span>NetworkChuck Academy</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#hero">Courses</a>
+        <a href="#curriculum">Paths</a>
+        <a href="#community">Community</a>
+        <a href="#instructor">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn-link" href="#">Sign in</a>
+        <button class="btn-primary" type="button">Start Learning</button>
+        <button class="theme-toggle-icon" id="themeToggle" type="button" aria-label="Toggle theme">☾</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =====================================================
+       2. HERO SECTION
+       ===================================================== -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="kicker">Course</span>
+        <h1>Course Title Goes Here</h1>
+
+        <div class="hero-top-meta" aria-label="Instructor and course meta">
+          <div class="hero-instructor">
+            <span class="avatar" aria-hidden="true">NC</span>
+            <span class="muted">Taught by <strong>[Instructor Name]</strong></span>
+          </div>
+          <div class="hero-updated muted">
+            Updated <strong>[Month Year]</strong> • [Level] • Labs included
+          </div>
+        </div>
+
+        <p class="muted">
+          Short hook goes here in NetworkChuck’s voice. Explain why this course matters and why it’s fun — real labs,
+          real skills, no boring slides.
+        </p>
+
+        <div class="hero-meta" aria-label="Course metadata">
+          <span class="pill"><span class="dot" aria-hidden="true"></span>[Skill level]</span>
+          <span class="pill">[Duration]</span>
+          <span class="pill">[Module count]</span>
+          <span class="pill">Hands‑on labs</span>
+          <span class="pill">Certification aligned (optional)</span>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn-primary" type="button">Start Course</button>
+          <button class="btn-secondary" type="button">Watch Preview</button>
+          <a class="btn-link" href="#curriculum">View curriculum →</a>
+        </div>
+      </div>
+
+      <aside class="hero-right" aria-label="Course preview and stats">
+        <div class="card video">
+          <div class="video-top">
+            <div><strong>Course preview</strong></div>
+            <div class="muted">Watch the first lesson free</div>
+          </div>
+          <div class="video-frame">
+            <!-- Optional: embed course preview video iframe here -->
+            PREVIEW VIDEO PLACEHOLDER
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-bottom:8px;">At a glance</h3>
+          <div class="stats">
+            <div class="stat">
+              <div class="label">Level</div>
+              <div class="value">[Level]</div>
+            </div>
+            <div class="stat">
+              <div class="label">Duration</div>
+              <div class="value">[Duration]</div>
+            </div>
+            <div class="stat">
+              <div class="label">Modules</div>
+              <div class="value">[Count]</div>
+            </div>
+            <div class="stat">
+              <div class="label">Labs</div>
+              <div class="value">[Yes/No]</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       3. COURSE OVERVIEW
+       ===================================================== -->
+  <section class="section" id="overview">
+    <div class="container">
+      <h2>Course Overview</h2>
+      <p class="muted">
+        This course takes learners from zero (or wherever they are today) to confidently applying the skills covered in
+        this path in real‑world scenarios.
+      </p>
+      <p class="muted">
+        Use this section to explain who the course is for, the problem it solves, and what learners will be able to do
+        after finishing. Keep it conversational, motivating, and non‑corporate.
+      </p>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       4. WHAT YOU'LL LEARN
+       ===================================================== -->
+  <section class="section learn">
+    <div class="container">
+      <div class="card learn-card">
+        <div class="learn-card-header">
+          <h2>What You’ll Learn</h2>
+          <p class="muted">
+            Action‑oriented outcomes only. Swap the bullets below with course‑specific skills.
+          </p>
+        </div>
+        <div class="learn-card-body">
+          <ul class="clean" aria-label="Learning outcomes">
+            <li>Build and configure real networks end‑to‑end.</li>
+            <li>Understand core concepts in a way that actually sticks.</li>
+            <li>Configure the key tools, services, or platforms this course focuses on.</li>
+            <li>Troubleshoot common issues with confidence.</li>
+            <li>Prepare for the related certification exam or job role.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       5–6. WHO IT'S FOR + PREREQUISITES
+       ===================================================== -->
+  <section class="section">
+    <div class="container two-col">
+      <div>
+        <h2>Who This Course Is For</h2>
+
+        <div class="persona">
+          <div class="icon" aria-hidden="true">✅</div>
+          <div>
+            <h3 style="margin:0 0 6px;">Beginners</h3>
+            <p class="muted" style="margin:0;">Brand‑new to this topic with no prior experience.</p>
+          </div>
+        </div>
+
+        <div class="persona" style="margin-top:12px;">
+          <div class="icon" aria-hidden="true">✅</div>
+          <div>
+            <h3 style="margin:0 0 6px;">IT &amp; helpdesk pros</h3>
+            <p class="muted" style="margin:0;">You already work in tech and want to level up into this area.</p>
+          </div>
+        </div>
+
+        <div class="persona" style="margin-top:12px;">
+          <div class="icon" aria-hidden="true">✅</div>
+          <div>
+            <h3 style="margin:0 0 6px;">Homelab builders</h3>
+            <p class="muted" style="margin:0;">You like to learn by building labs and experiments at home.</p>
+          </div>
+        </div>
+
+        <div class="persona" style="margin-top:12px;">
+          <div class="icon" aria-hidden="true">❌</div>
+          <div>
+            <h3 style="margin:0 0 6px;">Not ideal if…</h3>
+            <p class="muted" style="margin:0;">You’re already an advanced specialist seeking expert‑only deep dives.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2>Prerequisites</h2>
+        <div class="card">
+          <p><strong>No prior networking experience required.</strong></p>
+          <!-- Adjust this list per course -->
+          <p class="muted">Helpful, but not mandatory:</p>
+          <ul class="clean">
+            <li>Basic computer literacy</li>
+            <li>Comfort with typing commands</li>
+            <li>Curiosity and willingness to break things (and fix them)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       7. CURRICULUM / COURSE CONTENT
+       ===================================================== -->
+  <section class="section" id="curriculum">
+    <div class="container">
+      <h2>Course Curriculum</h2>
+      <p class="muted">
+        Expandable modules that show the structure and completeness of the course. Replace module titles and copy with
+        course‑specific content.
+      </p>
+
+      <div class="accordion" aria-label="Curriculum accordion">
+
+        <details class="module" open>
+          <summary>
+            <div>
+              Module 1 — Networking Fundamentals
+              <div class="meta">
+                <span>8 lessons</span><span>•</span><span>1 lab</span><span>•</span><span>~1h 20m</span>
+              </div>
+            </div>
+            <span class="muted">▼</span>
+          </summary>
+          <div class="body">
+            <div class="lesson">
+              <div class="left">
+                <span class="tag">VIDEO</span>
+                <span class="title">How networks actually move packets</span>
+              </div>
+              <div class="right">12m</div>
+            </div>
+            <div class="lesson">
+              <div class="left">
+                <span class="tag lab">LAB</span>
+                <span class="title">Lab: Build your first network</span>
+              </div>
+              <div class="right">35m</div>
+            </div>
+          </div>
+        </details>
+
+        <details class="module">
+          <summary>
+            <div>
+              Module 2 — Switching &amp; VLANs
+              <div class="meta">
+                <span>10 lessons</span><span>•</span><span>2 labs</span><span>•</span><span>~2h 10m</span>
+              </div>
+            </div>
+            <span class="muted">▼</span>
+          </summary>
+          <div class="body">
+            <div class="lesson">
+              <div class="left">
+                <span class="tag">VIDEO</span>
+                <span class="title">VLANs, trunks, and why they matter</span>
+              </div>
+              <div class="right">18m</div>
+            </div>
+            <div class="lesson">
+              <div class="left">
+                <span class="tag lab">LAB</span>
+                <span class="title">Lab: Multi‑switch VLAN topology</span>
+              </div>
+              <div class="right">40m</div>
+            </div>
+          </div>
+        </details>
+
+        <details class="module">
+          <summary>
+            <div>
+              Module 3 — IP Addressing &amp; Subnetting
+              <div class="meta">
+                <span>9 lessons</span><span>•</span><span>1 lab</span><span>•</span><span>~1h 45m</span>
+              </div>
+            </div>
+            <span class="muted">▼</span>
+          </summary>
+          <div class="body">
+            <div class="lesson">
+              <div class="left">
+                <span class="tag">VIDEO</span>
+                <span class="title">Subnetting without tears</span>
+              </div>
+              <div class="right">22m</div>
+            </div>
+          </div>
+        </details>
+
+        <!-- Add additional modules as needed for each course -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       8. HANDS-ON LABS & PRACTICE
+       ===================================================== -->
+  <section class="section hands-on" id="labs">
+    <div class="container hands-grid">
+      <div>
+        <h2>Hands-On Labs &amp; Practice</h2>
+        <p>
+          You won’t just watch — you’ll build. Every major concept has a lab so you can configure it, break it, and
+          troubleshoot it like a real engineer.
+        </p>
+        <p class="muted">
+          Use this section to describe how labs, simulations, and challenges are woven into the course, and how learners
+          can safely experiment without breaking production networks.
+        </p>
+      </div>
+
+      <div class="card hands-card">
+        <h3 style="margin-bottom:8px;">Lab Highlights</h3>
+        <ul class="clean">
+          <li>Guided, step‑by‑step labs for each major concept.</li>
+          <li>Realistic topologies that mirror on‑the‑job scenarios.</li>
+          <li>Safe environment to break things and fix them again.</li>
+          <li>Practice exams or challenges to lock in knowledge.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       9. CERTIFICATION ALIGNMENT
+       ===================================================== -->
+  <section class="section" id="certification">
+    <div class="container">
+      <div class="card">
+        <h2>Certification Alignment</h2>
+        <p class="muted">
+          This course aligns with the <strong>[Certification Name]</strong> exam objectives, covering all required
+          domains.
+        </p>
+        <ul class="clean">
+          <li>Domain 1 — Example objective</li>
+          <li>Domain 2 — Example objective</li>
+          <li>Domain 3 — Example objective</li>
+          <li>Domain 4 — Example objective</li>
+        </ul>
+        <p class="muted" style="margin-top:10px;">
+          This course prepares you for the exam. The certification exam itself is purchased and scheduled separately.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       10–12. INSTRUCTOR + SOCIAL PROOF + FEATURES
+       ===================================================== -->
+  <section class="section" id="instructor">
+    <div class="container two-col">
+      <div>
+        <h2>Your Instructor</h2>
+        <div class="card">
+          <div class="persona">
+            <div class="icon" aria-hidden="true">☕</div>
+            <div>
+              <h3 style="margin:0 0 6px;">NetworkChuck</h3>
+              <p class="muted" style="margin:0;">
+                Hi, I’m Chuck — I break things, fix them, and teach you how to do the same. Replace this with a course‑
+                specific instructor bio that feels human, fun, and credible.
+              </p>
+            </div>
+          </div>
+          <p class="muted" style="margin-top:10px;">
+            Use this space to add a short story, experience highlights, or why this instructor loves this particular
+            topic.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h2>Course Features Summary</h2>
+        <div class="card">
+          <ul class="clean">
+            <li>🎥 Bite‑sized video lessons</li>
+            <li>🧪 Hands‑on labs and challenges</li>
+            <li>📚 Downloadable resources and configs</li>
+            <li>🧠 Beginner‑friendly explanations</li>
+            <li>🧰 Real‑world skills you can use on the job</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>What Learners Are Saying</h2>
+      <div class="proof-grid" aria-label="Testimonials and metrics">
+        <div class="card quote">
+          <p style="margin-bottom:10px;"><strong>“This is the first networking course that actually made sense.”</strong></p>
+          <p class="muted" style="margin:0;">— Example learner</p>
+        </div>
+        <div class="card metric">
+          <div class="big">10k+</div>
+          <p class="muted" style="margin:6px 0 0;">learners using NetworkChuck Academy courses to level up</p>
+        </div>
+        <div class="card quote">
+          <p style="margin-bottom:10px;"><strong>“The labs are the secret sauce. I finally feel confident.”</strong></p>
+          <p class="muted" style="margin:0;">— Another learner</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       13. FINAL CALL-TO-ACTION
+       ===================================================== -->
+  <section class="section community" id="community">
+    <div class="container">
+      <h2>Start Building Real Networking Skills</h2>
+      <p class="muted">
+        Join thousands of learners building labs, troubleshooting real networks, and having way more fun than they
+        expected while studying for certifications.
+      </p>
+      <div class="btn-row">
+        <button class="btn-primary" type="button">Start Course</button>
+        <a class="btn-link" href="#curriculum">Explore the full curriculum →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       14. FOOTER
+       ===================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">
+          <img src="image.png" alt="NetworkChuck Academy logo" class="logo-image" />
+          <span>NetworkChuck Academy</span>
+        </div>
+        <p class="muted" style="margin-top:10px;">
+          Learn networking the fun way: hands-on labs, real configs, and “ah-ha” moments.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Explore</h3>
+        <div style="display:grid; gap:8px;">
+          <a href="#hero">Course overview</a>
+          <a href="#curriculum">Curriculum</a>
+          <a href="#community">Get started</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Support</h3>
+        <div style="display:grid; gap:8px;">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Help Center</a>
+          <a href="#">Community</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      © 2025 NetworkChuck Academy — Course Template
+    </div>
+  </footer>
+
+</body>
+</html>

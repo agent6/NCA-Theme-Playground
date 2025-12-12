@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NCA Theme – Light vs Dark</title>
+
+  <!-- Fonts -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&family=Oxygen:wght@300;400;700&display=swap" />
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Theme Tokens -->
+  <link rel="stylesheet" href="theme-light.css" />
+  <link rel="stylesheet" href="theme-dark.css" />
+
+  <!-- Theme Controller -->
+  <script src="theme.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="image.png" alt="NetworkChuck Academy logo" class="logo-image" />
+        <span>NetworkChuck Academy</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#tokens">Tokens</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn-link" href="index.html">Back to index</a>
+        <button class="theme-toggle-icon" id="themeToggle" type="button" aria-label="Toggle theme">☾</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- OVERVIEW -->
+  <section class="section" id="overview">
+    <div class="container">
+      <span class="kicker">Documentation</span>
+      <h1>Light vs Dark Theme Tokens</h1>
+      <p class="muted">
+        Both <code>theme-light.css</code> and <code>theme-dark.css</code> define the same set of CSS variables; only the
+        values change. Use this page to see how each token differs between modes (left = light, right = dark).
+      </p>
+    </div>
+  </section>
+
+  <!-- TOKEN COMPARISON -->
+  <section class="section" id="tokens">
+    <div class="container">
+      <h2>Core Tokens (Light / Dark)</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Fonts &amp; Scoping</h3>
+          <ul class="clean">
+            <li><code>--heading-font</code> – Montserrat in both modes.</li>
+            <li><code>--body-font</code>, <code>--planner-font</code> – Oxygen stack in both modes.</li>
+            <li>Light: scoped to <code>:root, [data-theme="light"]</code> (default).</li>
+            <li>Dark: scoped to <code>[data-theme="dark"]</code> only (opt‑in).</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Core Backgrounds</h3>
+          <ul class="clean">
+            <li><code>--body-background</code> – light <code>#ffffff</code> / dark <code>#171723</code>.</li>
+            <li><code>--planner-surface</code> – light <code>#ffffff</code> / dark <code>#2a2a36</code>.</li>
+            <li><code>--planner-surface-muted</code> – light <code>#fafafa</code> / dark <code>#1f1f30</code>.</li>
+            <li><code>--planner-border</code> – light <code>#e0e0e0</code> / dark <code>#333a46</code>.</li>
+            <li><code>--header-background</code> – light semi‑white / dark semi‑cinder.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Text &amp; Links</h3>
+          <ul class="clean">
+            <li><code>--dark-text</code> – light uses <code>#171723</code>; dark uses <code>#f7f7f7</code>.</li>
+            <li><code>--planner-text</code> – light <code>#333333</code>; dark <code>#f2f2f2</code>.</li>
+            <li><code>--planner-text-muted</code> – light <code>#757575</code>; dark <code>#c6c6c6</code>.</li>
+            <li><code>--link-text</code> – light brick <code>#bf6233</code>; dark gold <code>#e5a03b</code>.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Brand &amp; Accents</h3>
+          <ul class="clean">
+            <li><code>--brand-primary</code> – same gold <code>#e5a03b</code> in both.</li>
+            <li><code>--brand-primary-hover</code> – lighter gold in light / deeper gold in dark.</li>
+            <li><code>--academy-orange</code> / <code>--academy-orange-border</code> – tuned per mode for contrast.</li>
+            <li><code>--accent-1</code> – shared brick; <code>--accent-2</code> / <code>--accent-3</code> shift between softer and deeper values.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Hands‑On &amp; Footer</h3>
+          <ul class="clean">
+            <li><code>--hands-background</code> – light uses soft warm <code>#fdf5ec</code>; dark uses deep <code>--accent-3</code>.</li>
+            <li><code>--hands-card-background</code> – light transparent white; dark transparent cinder.</li>
+            <li><code>--footer-background</code> – dark band in both modes, slightly deeper in dark mode.</li>
+            <li>Footer text/link tokens keep contrast consistent across themes.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Other Tokens</h3>
+          <ul class="clean">
+            <li><code>--video-spot-1/2/3</code> – subtle tweaks between light and dark gradients.</li>
+            <li><code>--quiz-border</code>, <code>--quiz-background</code> – more saturated in dark mode for visibility.</li>
+            <li><code>--planner-warning</code> – solid red in light / slightly softer red in dark.</li>
+            <li>All 46 tokens exist in both files; only their values differ.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 style="margin-top:40px;">Color Swatches (Light / Dark)</h2>
+      <p class="muted">
+        Visual reference for the most important theme colors. Each row shows the token name and its value in light mode
+        (left) and dark mode (right). You can copy the hex / rgba values directly from the table.
+      </p>
+
+      <div class="card">
+        <table style="width:100%; border-collapse:collapse; font-size:14px;">
+          <thead>
+            <tr>
+              <th style="text-align:left; padding:6px 4px;">Token</th>
+              <th style="text-align:left; padding:6px 4px;">Light</th>
+              <th style="text-align:left; padding:6px 4px;">Dark</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:6px 4px;"><code>--body-background</code></td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #ccc;background:#ffffff;"></span>
+                <code>#ffffff</code>
+              </td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #333;background:#171723;"></span>
+                <code>#171723</code>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:6px 4px;"><code>--planner-surface</code></td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #ccc;background:#ffffff;"></span>
+                <code>#ffffff</code>
+              </td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #333;background:#2a2a36;"></span>
+                <code>#2a2a36</code>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:6px 4px;"><code>--planner-surface-muted</code></td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #ccc;background:#fafafa;"></span>
+                <code>#fafafa</code>
+              </td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #333;background:#1f1f30;"></span>
+                <code>#1f1f30</code>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:6px 4px;"><code>--planner-border</code></td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #e0e0e0;background:#ffffff;"></span>
+                <code>#e0e0e0</code>
+              </td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #333a46;background:#2a2a36;"></span>
+                <code>#333a46</code>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:6px 4px;"><code>--dark-text</code></td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #171723;background:#171723;"></span>
+                <code>#171723</code>
+              </td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #f7f7f7;background:#f7f7f7;"></span>
+                <code>#f7f7f7</code>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:6px 4px;"><code>--planner-text</code></td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #333;background:#333333;"></span>
+                <code>#333333</code>
+              </td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #f2f2f2;background:#f2f2f2;"></span>
+                <code>#f2f2f2</code>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:6px 4px;"><code>--link-text</code></td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #bf6233;background:#bf6233;"></span>
+                <code>#bf6233</code>
+              </td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #e5a03b;background:#e5a03b;"></span>
+                <code>#e5a03b</code>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:6px 4px;"><code>--brand-primary</code></td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #e5a03b;background:#e5a03b;"></span>
+                <code>#e5a03b</code>
+              </td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #e5a03b;background:#e5a03b;"></span>
+                <code>#e5a03b</code>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:6px 4px;"><code>--accent-1</code></td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #bf6233;background:#bf6233;"></span>
+                <code>#bf6233</code>
+              </td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #bf6233;background:#bf6233;"></span>
+                <code>#bf6233</code>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:6px 4px;"><code>--accent-2</code></td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #b3c977;background:#b3c977;"></span>
+                <code>#b3c977</code>
+              </td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #9fbf6f;background:#9fbf6f;"></span>
+                <code>#9fbf6f</code>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:6px 4px;"><code>--accent-3</code></td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #fdf9b2;background:#fdf9b2;"></span>
+                <code>#fdf9b2</code>
+              </td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #2f2a1b;background:#2f2a1b;"></span>
+                <code>#2f2a1b</code>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:6px 4px;"><code>--hands-background</code></td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #fdf5ec;background:#fdf5ec;"></span>
+                <code>#fdf5ec</code>
+              </td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #2f2a1b;background:#2f2a1b;"></span>
+                <code>#2f2a1b</code>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:6px 4px;"><code>--footer-background</code></td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #171723;background:#171723;"></span>
+                <code>#171723</code>
+              </td>
+              <td style="padding:6px 4px;">
+                <span style="display:inline-block;width:18px;height:18px;border-radius:4px;border:1px solid #05060a;background:#05060a;"></span>
+                <code>#05060a</code>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 style="margin-top:40px;">Raw Token Values (Copy/Paste)</h2>
+      <p class="muted">
+        Use these blocks to copy the exact CSS variables for each mode. Left is light mode
+        (<code>theme-light.css</code>), right is dark mode (<code>theme-dark.css</code>).
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Light Theme Tokens</h3>
+          <pre><code>:root,
+[data-theme="light"] {
+  --heading-font: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --body-font: "Oxygen", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --planner-font: var(--body-font);
+
+  --body-background: #ffffff;
+  --dark-background: #f2f2f2;
+  --light-background: #f2f2f2;
+
+  --planner-bg: #efefef;
+  --planner-surface: #ffffff;
+  --planner-surface-muted: #fafafa;
+  --planner-border: #e0e0e0;
+  --planner-border-soft: rgba(0, 0, 0, 0.03);
+
+  --header-background: rgba(255, 255, 255, 0.85);
+
+  --dark-text: #171723;
+  --planner-text: #333333;
+  --planner-text-muted: #757575;
+  --light-text: #ffffff;
+
+  --link-text: #bf6233;
+
+  --brand-primary: #e5a03b;
+  --brand-primary-hover: #cf871b;
+  --academy-orange: #e8a651;
+  --academy-orange-border: #e8a651;
+  --academy-orange-light: #f5d7b0;
+
+  --accent-1: #bf6233;
+  --accent-2: #b3c977;
+  --accent-2-soft: rgba(179, 201, 119, 0.18);
+  --accent-3: #fdf9b2;
+
+  --planner-accent: var(--academy-orange);
+  --planner-accent-soft: rgba(232, 166, 81, 0.15);
+  --planner-accent-border: var(--academy-orange);
+  --planner-accent-shadow: rgba(232, 166, 81, 0.2);
+  --planner-accent-shadow-strong: rgba(232, 166, 81, 0.3);
+
+  --video-spot-1: rgba(232, 166, 81, 0.20);
+  --video-spot-2: rgba(191, 98, 51, 0.18);
+  --video-spot-3: rgba(179, 201, 119, 0.18);
+
+  --quiz-border: rgba(191, 98, 51, 0.35);
+  --quiz-background: rgba(191, 98, 51, 0.10);
+
+  --hands-card-background: rgba(255, 255, 255, 0.65);
+  --hands-background: #fdf5ec;
+
+  --footer-background: #171723;
+  --footer-text: rgba(255, 255, 255, 0.9);
+  --footer-text-strong: #ffffff;
+  --footer-text-muted: rgba(255, 255, 255, 0.65);
+  --footer-link: #f5d7b0;
+  --footer-link-hover: #ffffff;
+  --footer-border: rgba(255, 255, 255, 0.12);
+
+  --planner-warning: #dc2626;
+}</code></pre>
+        </div>
+
+        <div class="card">
+          <h3>Dark Theme Tokens</h3>
+          <pre><code>[data-theme="dark"] {
+  --heading-font: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --body-font: "Oxygen", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --planner-font: var(--body-font);
+
+  --body-background: #171723;
+  --dark-background: #171723;
+  --light-background: #1f1f30;
+
+  --planner-bg: #171723;
+  --planner-surface: #2a2a36;
+  --planner-surface-muted: #1f1f30;
+  --planner-border: #333a46;
+  --planner-border-soft: rgba(39, 39, 60, 0.6);
+
+  --header-background: rgba(23, 23, 35, 0.9);
+
+  --dark-text: #f7f7f7;
+  --planner-text: #f2f2f2;
+  --planner-text-muted: #c6c6c6;
+  --light-text: #ffffff;
+
+  --link-text: #e5a03b;
+
+  --brand-primary: #e5a03b;
+  --brand-primary-hover: #ca9f43;
+  --academy-orange: #e5a03b;
+  --academy-orange-border: #e5a03b;
+  --academy-orange-light: #3a2f1a;
+
+  --accent-1: #bf6233;
+  --accent-2: #9fbf6f;
+  --accent-2-soft: rgba(159, 191, 111, 0.25);
+  --accent-3: #2f2a1b;
+
+  --planner-accent: var(--academy-orange);
+  --planner-accent-soft: rgba(232, 166, 81, 0.18);
+  --planner-accent-border: rgba(232, 166, 81, 0.6);
+  --planner-accent-shadow: rgba(0, 0, 0, 0.45);
+  --planner-accent-shadow-strong: rgba(0, 0, 0, 0.65);
+
+  --video-spot-1: rgba(232, 166, 81, 0.20);
+  --video-spot-2: rgba(191, 98, 51, 0.20);
+  --video-spot-3: rgba(159, 191, 111, 0.22);
+
+  --quiz-border: rgba(217, 119, 69, 0.6);
+  --quiz-background: rgba(217, 119, 69, 0.18);
+
+  --hands-card-background: rgba(23, 23, 35, 0.85);
+  --hands-background: var(--accent-3);
+
+  --footer-background: #05060a;
+  --footer-text: rgba(255, 255, 255, 0.9);
+  --footer-text-strong: #ffffff;
+  --footer-text-muted: rgba(255, 255, 255, 0.6);
+  --footer-link: #f5d7b0;
+  --footer-link-hover: #ffffff;
+  --footer-border: rgba(148, 163, 184, 0.4);
+
+  --planner-warning: #f87171;
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">
+          <img src="image.png" alt="NetworkChuck Academy logo" class="logo-image" />
+          <span>NetworkChuck Academy</span>
+        </div>
+        <p class="muted" style="margin-top:10px;">
+          Reference for how light and dark mode share the same token names while using different values.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Docs</h3>
+        <div style="display:grid; gap:8px;">
+          <a href="style-components-doc.html">Style &amp; Components</a>
+          <a href="theme-light-dark-comparison.html">Light vs Dark Theme</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Navigation</h3>
+        <div style="display:grid; gap:8px;">
+          <a href="index.html">Theme index</a>
+          <a href="course-template.html">Course template</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      © 2025 NetworkChuck Academy — Theme Docs
+    </div>
+  </footer>
+
+</body>
+</html>

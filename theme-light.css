@@ -1,0 +1,85 @@
+/* =========================================================
+   NetworkChuck Academy — Light Theme Tokens
+   Purpose: Light mode color variables ONLY
+   Applied when: <html data-theme="light"> (default)
+   ========================================================= */
+
+:root,
+[data-theme="light"] {
+
+  /* ---------- Fonts ---------- */
+  --heading-font: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --body-font: "Oxygen", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --planner-font: var(--body-font);
+
+  /* ---------- Core Backgrounds ---------- */
+  --body-background: #ffffff;
+  --dark-background: #f2f2f2;
+  --light-background: #f2f2f2;
+
+  --planner-bg: #efefef;
+  --planner-surface: #ffffff;
+  --planner-surface-muted: #fafafa;
+  --planner-border: #e0e0e0;
+  --planner-border-soft: rgba(0, 0, 0, 0.03);
+
+  /* Header */
+  --header-background: rgba(255, 255, 255, 0.85);
+
+  /* ---------- Text ---------- */
+  --dark-text: #171723;
+  --planner-text: #333333;
+  --planner-text-muted: #757575;
+  --light-text: #ffffff;
+
+  /* ---------- Links ---------- */
+  --link-text: #bf6233;
+
+  /* ---------- Brand / Accents ---------- */
+  --brand-primary: #e5a03b;
+  --brand-primary-hover: #cf871b;
+  --academy-orange: #e8a651;
+  --academy-orange-border: #e8a651;
+  --academy-orange-light: #f5d7b0;
+
+  --accent-1: #bf6233; /* warm accent (links, highlights) */
+  --accent-2: #b3c977; /* success / learning */
+  --accent-3: #fdf9b2; /* experiential / hands-on surface */
+
+  --accent-2-soft: rgba(179, 201, 119, 0.18);
+
+  /* ---------- Accent Effects ---------- */
+  --planner-accent: var(--academy-orange);
+  --planner-accent-soft: rgba(232, 166, 81, 0.15);
+  --planner-accent-border: var(--academy-orange);
+  --planner-accent-shadow: rgba(232, 166, 81, 0.2);
+  --planner-accent-shadow-strong: rgba(232, 166, 81, 0.3);
+
+  /* ---------- Video Spots ---------- */
+  --video-spot-1: rgba(232, 166, 81, 0.20);
+  --video-spot-2: rgba(191, 98, 51, 0.18);
+  --video-spot-3: rgba(179, 201, 119, 0.18);
+
+  /* ---------- Quiz Tag ---------- */
+  --quiz-border: rgba(191, 98, 51, 0.35);
+  --quiz-background: rgba(191, 98, 51, 0.10);
+
+  /* ---------- Hands card ---------- */
+  --hands-card-background: rgba(255, 255, 255, 0.65);
+
+  /* ---------- Hands-on section background ---------- */
+  /* Softer lab background for light mode (less saturated than accent-3) */
+  --hands-background: #fdf5ec;
+
+  /* ---------- Footer ---------- */
+  --footer-background: #171723;
+  --footer-text: rgba(255, 255, 255, 0.9);
+  --footer-text-strong: #ffffff;
+  --footer-text-muted: rgba(255, 255, 255, 0.65);
+  --footer-link: #f5d7b0;
+  --footer-link-hover: #ffffff;
+  --footer-border: rgba(255, 255, 255, 0.12);
+
+  /* ---------- States ---------- */
+  --planner-warning: #dc2626;
+}

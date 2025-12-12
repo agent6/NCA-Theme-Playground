@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NCA Theme Demo</title>
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&family=Oxygen:wght@300;400;700&display=swap" />
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Theme Tokens -->
+  <link rel="stylesheet" href="theme-light.css" />
+  <link rel="stylesheet" href="theme-dark.css" />
+
+  <!-- Theme Controller -->
+  <script src="theme.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Demo Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="image.png" alt="NetworkChuck Academy logo" class="logo-image" />
+        <span>NCA Theme Demo</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#typography">Typography</a>
+        <a href="#buttons">Buttons</a>
+        <a href="#cards">Cards</a>
+        <a href="#sections">Sections</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-icon" id="themeToggle" type="button" aria-label="Toggle theme">☾</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- TYPOGRAPHY & COLORS -->
+  <section class="section" id="typography">
+    <div class="container">
+      <h2>Theme Demo: Typography & Colors</h2>
+      <p class="muted">
+        This section shows the base typography, body copy, muted text, and link colors for the current theme.
+      </p>
+
+      <div class="card">
+        <h3>Headings (using <code>--heading-font</code>)</h3>
+        <h1>H1 — Primary page heading</h1>
+        <h2>H2 — Section heading</h2>
+        <h3>H3 — Subsection heading</h3>
+
+        <p>
+          Body text uses the <code>--body-font</code> token (Oxygen). This paragraph reflects the default body styling,
+          including line height and spacing between blocks.
+        </p>
+        <p class="muted">
+          Muted text uses <code>--planner-text-muted</code> and is typically used for secondary descriptions and helper copy.
+        </p>
+        <p>
+          Links use <a href="#typography">the current theme’s link color</a> via <code>--link-text</code>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUTTONS & PILLS -->
+  <section class="section" id="buttons">
+    <div class="container">
+      <h2>Components: Buttons & Pills</h2>
+      <p class="muted">
+        Button and pill styles demonstrate how the gold/brick accent system adapts between light and dark themes.
+      </p>
+
+      <div class="card">
+        <h3>Buttons</h3>
+        <div class="btn-row">
+          <button class="btn-primary" type="button">Primary Button</button>
+          <button class="btn-secondary" type="button">Secondary Button</button>
+          <a class="btn-link" href="#buttons">Link Button</a>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px;">
+        <h3>Pills & Meta</h3>
+        <div class="hero-meta" aria-label="Meta pills">
+          <span class="pill"><span class="dot" aria-hidden="true"></span>Beginner</span>
+          <span class="pill">21h 09m</span>
+          <span class="pill">7 Modules</span>
+          <span class="pill">Labs</span>
+          <span class="pill">Practice Exam</span>
+        </div>
+        <p class="muted">
+          These pills use <code>--planner-accent-soft</code> and <code>--planner-accent-border</code>, with optional status
+          dots using <code>--accent-2</code> and <code>--accent-2-soft</code>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDS, TAGS, LISTS -->
+  <section class="section" id="cards">
+    <div class="container">
+      <h2>Components: Cards, Tags, Lists</h2>
+      <p class="muted">
+        Cards and tags show how surfaces, borders, and accent states render in each theme.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Standard Card</h3>
+          <p>This card uses <code>--planner-surface</code>, <code>--planner-border</code>, and <code>--planner-border-soft</code>.</p>
+          <ul class="clean">
+            <li>Clean list with themed markers</li>
+            <li>Spacing based on <code>ul.clean</code></li>
+          </ul>
+        </div>
+
+        <div class="card hands-card">
+          <h3>Hands-On Card</h3>
+          <p class="muted">
+            Hands-on cards show the dedicated <code>--hands-card-background</code> token and accented borders.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Lesson Tags</h3>
+          <div class="lesson">
+            <div class="left">
+              <span class="tag">VIDEO</span>
+              <span class="title">Standard video lesson</span>
+            </div>
+            <div class="right">12m</div>
+          </div>
+          <div class="lesson">
+            <div class="left">
+              <span class="tag lab">LAB</span>
+              <span class="title">Lab lesson with accent background</span>
+            </div>
+            <div class="right">35m</div>
+          </div>
+          <div class="lesson">
+            <div class="left">
+              <span class="tag quiz">QUIZ</span>
+              <span class="title">Quiz / exam style tag</span>
+            </div>
+            <div class="right">10m</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE SECTIONS DEMO -->
+  <section class="section" id="sections">
+    <div class="container">
+      <h2>Section Layouts</h2>
+      <p class="muted">
+        Below are miniature versions of the main page sections to show background, border, and layout behavior.
+      </p>
+    </div>
+  </section>
+
+  <!-- HERO DEMO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="kicker">Demo — Hero Section</span>
+        <h1>Hero Layout Preview</h1>
+        <p class="muted">
+          This hero shows the gradient background, text hierarchy, meta pills, and primary/secondary CTAs in the current theme.
+        </p>
+
+        <div class="hero-meta">
+          <span class="pill"><span class="dot" aria-hidden="true"></span>Level</span>
+          <span class="pill">Duration</span>
+          <span class="pill">Modules</span>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn-primary" type="button">Primary CTA</button>
+          <button class="btn-secondary" type="button">Secondary CTA</button>
+        </div>
+      </div>
+
+      <aside class="hero-right">
+        <div class="card">
+          <h3>Stats Card</h3>
+          <div class="stats">
+            <div class="stat">
+              <div class="label">Metric</div>
+              <div class="value">87</div>
+            </div>
+            <div class="stat">
+              <div class="label">Labs</div>
+              <div class="value">12</div>
+            </div>
+            <div class="stat">
+              <div class="label">Quizzes</div>
+              <div class="value">9</div>
+            </div>
+            <div class="stat">
+              <div class="label">Weeks</div>
+              <div class="value">3–6</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP DEMO -->
+  <section class="trust-strip section compact">
+    <div class="container trust-inner">
+      <div class="instructors">
+        <span class="avatar" aria-hidden="true">NC</span>
+        <span>Demo: Trust Strip Component</span>
+        <span class="muted">•</span>
+        <span class="muted">Uses surface-muted + border tokens</span>
+      </div>
+      <div class="muted">
+        Last updated: <strong>Token-driven</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO / PREVIEW DEMO -->
+  <section class="section">
+    <div class="container">
+      <h2>Course Preview Component</h2>
+      <div class="video">
+        <div class="video-top">
+          <div><strong>Video Header</strong></div>
+          <div class="muted">6:32</div>
+        </div>
+        <div class="video-frame">
+          VIDEO FRAME DEMO
+        </div>
+        <details>
+          <summary>Transcript (details/summary)</summary>
+          <p class="muted" style="margin-top:10px;">
+            This demonstrates the <code>&lt;details&gt;</code> styling in both themes, including borders and text.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEARN & CURRICULUM DEMO -->
+  <section class="section learn">
+    <div class="container">
+      <h2>Learn & Curriculum Components</h2>
+      <div class="learn-grid">
+        <div>
+          <h3>Learn Section</h3>
+          <p class="muted">
+            Background, borders, and card surfaces are controlled via planner tokens for each theme.
+          </p>
+        </div>
+        <div class="card">
+          <ul class="clean">
+            <li>Outcome bullet one</li>
+            <li>Outcome bullet two</li>
+            <li>Outcome bullet three</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion" style="margin-top:24px;">
+        <details class="module" open>
+          <summary>
+            <div>
+              Curriculum Module (Demo)
+              <div class="meta">
+                <span>3 lessons</span><span>•</span><span>1 lab</span><span>•</span><span>~45m</span>
+              </div>
+            </div>
+            <span class="muted">▼</span>
+          </summary>
+          <div class="body">
+            <div class="lesson">
+              <div class="left">
+                <span class="tag">VIDEO</span>
+                <span class="title">Lesson row layout</span>
+              </div>
+              <div class="right">10m</div>
+            </div>
+            <div class="lesson">
+              <div class="left">
+                <span class="tag lab">LAB</span>
+                <span class="title">Lab row with dedicated styling</span>
+              </div>
+              <div class="right">25m</div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- HANDS-ON & PERSONAS DEMO -->
+  <section class="section hands-on">
+    <div class="container hands-grid">
+      <div>
+        <h2>Hands-On Section</h2>
+        <p>
+          Shows the accent surface (<code>--accent-3</code>) used for lab-focused sections and the top/bottom borders.
+        </p>
+      </div>
+      <div class="card hands-card">
+        <h3>Personas</h3>
+        <div class="persona">
+          <div class="icon" aria-hidden="true">1</div>
+          <div>
+            <h3 style="margin:0 0 6px;">Persona Card</h3>
+            <p class="muted" style="margin:0;">Demonstrates persona layout, icons, and text.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF & PRICING DEMO -->
+  <section class="section">
+    <div class="container">
+      <h2>Proof & Pricing Components</h2>
+      <div class="proof-grid">
+        <div class="card quote">
+          <p><strong>Quote Card</strong></p>
+          <p class="muted">Shows left accent border and card surface.</p>
+        </div>
+        <div class="card metric">
+          <div class="big">80%</div>
+          <p class="muted">Metric card with accent background.</p>
+        </div>
+        <div class="card quote">
+          <p><strong>Another Quote</strong></p>
+          <p class="muted">Used for testimonials / social proof.</p>
+        </div>
+      </div>
+
+      <div class="plans" style="margin-top:32px;">
+        <div class="plan featured">
+          <div class="top">
+            <h3 style="margin:0;">Featured Plan</h3>
+            <span class="chip">BEST VALUE</span>
+          </div>
+          <p class="muted">Uses <code>.plan.featured</code> styling.</p>
+        </div>
+        <div class="plan">
+          <div class="top">
+            <h3 style="margin:0;">Standard Plan</h3>
+          </div>
+          <p class="muted">Standard plan card variant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RELATED & COMMUNITY DEMO -->
+  <section class="section">
+    <div class="container">
+      <h2>Related & Community Sections</h2>
+
+      <div class="related-grid">
+        <div class="course-card">
+          <h3 style="margin:0 0 8px;">Course Card</h3>
+          <p class="muted">Hover to see border and shadow behavior.</p>
+        </div>
+        <div class="course-card">
+          <h3 style="margin:0 0 8px;">Course Card</h3>
+          <p class="muted">Shared layout across related courses.</p>
+        </div>
+        <div class="course-card">
+          <h3 style="margin:0 0 8px;">Course Card</h3>
+          <p class="muted">Demonstrates hover elevation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section community">
+    <div class="container">
+      <h2>Community CTA</h2>
+      <p class="muted">
+        Shows the gradient background and button/link treatments for the community section.
+      </p>
+      <div class="btn-row">
+        <button class="btn-primary" type="button">Primary Community CTA</button>
+        <a class="btn-link" href="#top">Secondary Link</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER DEMO -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">
+          <img src="image.png" alt="NetworkChuck Academy logo" class="logo-image" />
+          <span>Footer Component</span>
+        </div>
+        <p class="muted" style="margin-top:10px;">
+          Uses dedicated footer tokens for background, text, and links.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Explore</h3>
+        <div style="display:grid; gap:8px;">
+          <a href="#typography">Typography demo</a>
+          <a href="#buttons">Buttons demo</a>
+          <a href="#cards">Cards demo</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Sections</h3>
+        <div style="display:grid; gap:8px;">
+          <a href="#sections">Section layouts</a>
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      NCA Theme Demo — Light/Dark Token Preview
+    </div>
+  </footer>
+
+</body>
+</html>

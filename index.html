@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NetworkChuck Academy — Theme Playground</title>
+
+  <!-- Fonts -->
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&family=Oxygen:wght@300;400;700&display=swap" />
+
+  <!-- Core Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Theme Tokens -->
+  <link rel="stylesheet" href="theme-light.css" />
+  <link rel="stylesheet" href="theme-dark.css" />
+
+  <!-- Theme Controller -->
+  <script src="theme.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="image.png" alt="NetworkChuck Academy logo" class="logo-image" />
+        <span>NetworkChuck Academy</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#demos">Demos</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle-icon" id="themeToggle" type="button" aria-label="Toggle theme">☾</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- OVERVIEW -->
+  <section class="section" id="overview">
+    <div class="container two-col">
+      <div>
+        <span class="kicker">Theme Playground</span>
+        <h1>NetworkChuck Academy Course Layouts</h1>
+        <p class="muted">
+          This mini site is a static mockup that showcases the new course landing page theme for NetworkChuck Academy.
+          It uses shared tokens for typography, colors, and layout so every course — CCNA, A+, Linux, Cloud, Security,
+          and more — can share a consistent look and feel.
+        </p>
+        <p class="muted">
+          Use the links on this page to jump into specific demos: a generic course template, the CCNA 2025 landing page
+          concept, the N8N automation course, and a theme demo that shows all components in isolation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-bottom:8px;">Included in this Playground</h3>
+        <ul class="clean">
+          <li><strong>Theme Demo:</strong> Typography, buttons, cards, and sections.</li>
+          <li><strong>CCNA 2025 Page:</strong> Story‑driven hero, labs, and course contents.</li>
+          <li><strong>N8N Course Page:</strong> AI‑powered automation landing page using the same template.</li>
+          <li><strong>Course Template:</strong> Reusable layout for any future course.</li>
+          <li><strong>Light / Dark Mode:</strong> Toggle between modes using shared tokens.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO LINKS -->
+  <section class="section" id="demos">
+    <div class="container">
+      <h2>Explore the Demos</h2>
+      <p class="muted">
+        These links open individual mock pages that all share the same design system.
+      </p>
+
+      <div class="related-grid" aria-label="Demo pages">
+        <a class="course-card" href="theme-demo.html">
+          <h3 style="margin:0 0 8px;">Theme Demo</h3>
+          <p class="muted">Component gallery with typography, buttons, cards, and section layouts.</p>
+        </a>
+
+        <a class="course-card" href="ccna-2025.html">
+          <h3 style="margin:0 0 8px;">Cisco CCNA 2025 Page</h3>
+          <p class="muted">Story‑driven landing page for the CCNA 2025 course (Castle Rysen Coffee).</p>
+        </a>
+
+        <a class="course-card" href="n8n.html">
+          <h3 style="margin:0 0 8px;">Getting Started with N8N</h3>
+          <p class="muted">Automation‑focused course landing page built from the same template.</p>
+        </a>
+
+        <a class="course-card" href="course-template.html">
+          <h3 style="margin:0 0 8px;">Generic Course Template</h3>
+          <p class="muted">Blank template that any new course can plug content into.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo">
+          <img src="image.png" alt="NetworkChuck Academy logo" class="logo-image" />
+          <span>NetworkChuck Academy</span>
+        </div>
+        <p class="muted" style="margin-top:10px;">
+          Theme playground for internal review — not a live production site.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Demos</h3>
+        <div style="display:grid; gap:8px;">
+          <a href="theme-demo.html">Theme Demo</a>
+          <a href="ccna-2025.html">CCNA 2025 Page</a>
+          <a href="n8n.html">N8N Course Page</a>
+          <a href="course-template.html">Course Template</a>
+          <a href="style-components-doc.html">Style &amp; Components Doc</a>
+          <a href="theme-light-dark-comparison.html">Light vs Dark Theme Doc</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Info</h3>
+        <div style="display:grid; gap:8px;">
+          <a href="#overview">Overview</a>
+          <a href="#demos">Demos</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      © 2025 NetworkChuck Academy — Theme Playground Mockup
+    </div>
+  </footer>
+
+</body>
+</html>
